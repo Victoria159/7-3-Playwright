@@ -1,0 +1,23 @@
+{
+  "name": "7-3-playwright",
+  "version": "1.0.0",
+  "description": "playwright test",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "prettier": "prettier  — write src/**/*.js",
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "test",
+    "playwright"
+  ],
+  "author": "Victoria",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.19.2",
+    "playwright": "^1.19.2"
+  }
+}

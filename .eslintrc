@@ -1,0 +1,17 @@
+{
+    "env": {   // где будет исполняться наш код
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb/base",   // стандарстная библиотека правил "хорошо" написанного кода
+      "plugin:prettier/recommended" // пресет с настройками prettier должен быть последним 
+                                    // он удаляет некоторые правила eslint из-за которых могут возникать конфликты. 
+    ],
+    "rules": {
+      "prettier/prettier": ["error", { "endOfLine":"auto" }], // устраняет ошибку: [eslint] Delete 'cr' [prettier/prettier]
+      "no-debugger": "off",
+      "no-console":"off"
+    }
+}
